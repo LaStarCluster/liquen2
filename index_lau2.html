@@ -1100,7 +1100,8 @@ async function ready() {
 function begin() {
   if (dir.started) { portal.classList.add('gone'); return; }
   dir.started = true; portal.classList.add('gone');
-  music.start(); breath.initMic();
+  music.start();
+// breath.initMic();
   setOp(M1.forest, 0); setOp(M1.leaves, 0); setU(M1.lich, 'uReveal', 0);
   go(0);
 }
